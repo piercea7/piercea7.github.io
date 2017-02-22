@@ -1,1 +1,1 @@
-alert("hello from local javascript file");
+alert("hello from remote javascript file");
