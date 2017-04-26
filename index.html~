@@ -27,6 +27,7 @@
 .container-fluid {
 	padding-top: 40px;
 	padding-bottom: 40px;
+}
 </style>
  
 <body onload="startTime()">
@@ -98,7 +99,7 @@
 <div>    
   <a name="contact"></a>
   <h3>Contact</h3>
-  Email:  <div id="email"></div>
+   <div id="email" onclick="display">Email: fake@ </div>
         
   <div>LinkedIn: <a href=""> your LinkedIn account</a></div>
   
@@ -114,6 +115,9 @@
   <script> function startTime(){
 	document.getElementById('clock').innerHTML = new Date();
 	setTimeout(startTime,1000);
+	}
+	function display(){
+	document.getElementById('email').innerHTML = "something.org";
 	}
   </script>
 	
